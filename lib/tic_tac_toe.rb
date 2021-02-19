@@ -32,6 +32,15 @@ def move(board, index, char)
   board[index] = char
 end
 
+#position_taken?
+def position_taken?(board, index)
+  if board[index] == "" || board[index] == " " || board[index] == nil
+    false
+  else
+    true
+  end
+end
+
 
 # rspec spec/01_tic_tac_toe_spec.rb
 
