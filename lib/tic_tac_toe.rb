@@ -129,3 +129,5 @@ end
 def play(board)
   input = gets.strip
 end
+
+# rspec spec/02_play_spec.rb
