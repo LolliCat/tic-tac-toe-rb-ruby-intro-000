@@ -127,10 +127,11 @@ end
 
 #define play(board) method
 def play(board)
-  until over?(board)
+
+  turn(board)
+  if !over?(board)
     turn(board)
   end
-
 end
 
 # rspec spec/02_play_spec.rb
