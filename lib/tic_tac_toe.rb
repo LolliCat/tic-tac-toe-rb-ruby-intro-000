@@ -123,3 +123,8 @@ def current_player(board)
   end
   player = turn_count(board).even? ? "X" : "O"
 end
+
+
+#define play(board) method
+def play(board)
+end
