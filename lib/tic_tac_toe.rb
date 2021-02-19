@@ -50,6 +50,23 @@ def valid_move?(board, index)
   end
 end
 
+#turn
+def turn(board)
+  puts "Please enter 1-9:"
+  input = gets.strip
+
+  index = input_to_index(input)
+  until valid_move?(board, index)
+    puts "Sorry, that is not a valid move. Try again. Enter 1-9"
+    input = gets.strip
+    index = input_to_index(input)
+  end
+
+  move(board, index)
+  display_board(board)
+
+end
+
 # rspec spec/01_tic_tac_toe_spec.rb
 
 #turn_count
