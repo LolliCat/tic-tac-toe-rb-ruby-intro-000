@@ -26,6 +26,13 @@ end
 def input_to_index(input)
   index = input.to_i - 1
 end
+
+#move
+def move(board, index, char = "X")
+  board[index] = char
+end
+
+
 # rspec spec/01_tic_tac_toe_spec.rb
 
 #turn_count
