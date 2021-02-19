@@ -90,6 +90,10 @@ def draw?(board)
   end
 end
 
+# define #over?(board) method
+def over?(board)
+  won?(board) || draw?(board) || full?(board)
+end
 
 # rspec spec/01_tic_tac_toe_spec.rb
 
