@@ -133,6 +133,7 @@ def play(board)
 
    if won?(board)
      puts "Congratulations #{winner(board)}!"
+   end
 end
 
 # rspec spec/02_play_spec.rb
