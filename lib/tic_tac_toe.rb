@@ -95,6 +95,10 @@ def over?(board)
   won?(board) || draw?(board) || full?(board)
 end
 
+# define #winner(board method)
+def winner(board)
+  won?(board) ? board[won?(board)[0]] : nil
+end
 # rspec spec/01_tic_tac_toe_spec.rb
 
 #turn_count
