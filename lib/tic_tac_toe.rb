@@ -127,7 +127,8 @@ end
 
 #define play(board) method
 def play(board)
-  input = gets.strip
+  until over?(board)
+    turn(board)
 end
 
 # rspec spec/02_play_spec.rb
