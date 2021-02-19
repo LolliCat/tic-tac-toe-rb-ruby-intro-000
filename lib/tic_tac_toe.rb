@@ -127,4 +127,6 @@ end
 
 #define play(board) method
 def play(board)
+  input = gets.strip
+
 end
