@@ -56,13 +56,13 @@ def turn(board)
   input = gets.strip
 
   index = input_to_index(input)
-  until valid_move?(board, index)
+  until valid_move?(board, index, char)
     puts "Sorry, that is not a valid move. Try again. Enter 1-9"
     input = gets.strip
     index = input_to_index(input)
   end
 
-  move(board, index)
+  move(board, index, char)
   display_board(board)
 
 end
