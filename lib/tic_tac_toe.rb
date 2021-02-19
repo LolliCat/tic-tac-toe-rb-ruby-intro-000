@@ -128,7 +128,7 @@ end
 #define play(board) method
 def play(board)
   turn(board)
-  if !over?(board)
+  until over?(board)
     turn(board)
   end
 
