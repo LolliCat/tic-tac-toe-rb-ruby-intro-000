@@ -74,6 +74,10 @@ def won?(board)
   end
 end
 
+# define #full?(board) method
+def full?(board)
+  board.all? { |position| position != " " }
+end
 
 # define #draw?(board) method
 def draw?(board)
